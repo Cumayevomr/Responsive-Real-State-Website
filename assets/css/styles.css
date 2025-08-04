@@ -418,8 +418,8 @@ button {
 }
 
 /* Swiper class */
-.swiper-button-next::after,
-.swiper-button-prev::after{
+.swiper-button-prev::after,
+.swiper-button-next::after{
   content: '';
 }
 .swiper-button-next,
