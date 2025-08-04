@@ -7,7 +7,18 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER POPULAR ===============*/
-
+var swiperPopular = new Swiper(".popular__container", {
+    spaceBetween: 32,
+    grapCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    
+    navigation: {
+        nextEl: ".swiper-button-next",
+        nextEl: ".swiper-button-prev",
+    }
+})
 
 /*=============== VALUE ACCORDION ===============*/
 
