@@ -50,7 +50,24 @@ const toggleItem = (item) =>{
 }
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
 
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+        sectionTop = current.offsetTop - 58,
+        sectioId = current.getAttribute('id')
+
+    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document.querySelector('.nav__menu a[href*=' + sectioId + ']').classList.add('active-link')
+    } else {
+        documentq.querySelector('.nav__menu a[href*=' + sectioId + ']').classList.remove('active-link')
+    }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
