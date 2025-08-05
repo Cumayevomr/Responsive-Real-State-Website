@@ -1018,7 +1018,7 @@ body.dark-theme{
 }
 
 /* For large devices */
-@media screen and (min-width: 1023x) {
+@media screen and (min-width: 1023px) {
   .section{
     padding: 7.5rem 0 1rem;
   }
@@ -1062,7 +1062,7 @@ body.dark-theme{
     color: var(--text-color-light);
   }
 
-  .scroll-header .nav__link
+  .scroll-header .nav__link,
   .scroll-header .change-theme{
     color: var(--text-color);
   }
@@ -1093,7 +1093,7 @@ body.dark-theme{
   .home__orbe{
     width: 504px;
     height: 611px;
-    border-radius: 256px 156px 0 0;
+    border-radius: 256px 256px 0 0;
   }
   .home__img{
     width: 472px;
@@ -1181,7 +1181,7 @@ body.dark-theme{
   }
 
   .footer__content{
-    grid-template-columns: 4, max-content;
+    grid-template-columns: repeat(4, max-content);
   }
   .footer__title{
     margin-bottom: 1.5rem;
